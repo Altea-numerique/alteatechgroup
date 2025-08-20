@@ -184,7 +184,7 @@ a.cta-more:hover{
   background-color: rgba(21, 21, 26, 0.772);
 }
 #valeur-ajoutee{
-    background-image: url("../img/bg-fille-tech.jpg");
+    background-image: url("../img/bg-digital-blue.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -268,10 +268,6 @@ a.cta-more:hover{
   margin-top: 100px;
   background-color: #f4f4f4;
   padding: 20px;
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 100px auto;
   border-top: 3px solid rgba(0, 0, 0, 0.158) !important;
 }
@@ -294,7 +290,8 @@ a.cta-more:hover{
   margin: auto 10px;
   width: 100%;
 }
-#realisations li{
+
+#realisations .altea-code-desc p{
   list-style: none;
   background-color: #2b2b2b;
   color: #fff;
@@ -306,12 +303,12 @@ a.cta-more:hover{
 .bx-play{
   color: #fff !important;
 }
-#realisations li i{
+#realisations p i{
  font-size: 20px;
  color: #12b300;
  font-weight: 500;
 }
-#realisations li:hover{
+#realisations .altea-code-desc p:hover{
  background-color: #2b2b2be5;
  transform: scale(1.03);
 }
@@ -320,6 +317,15 @@ a.cta-more:hover{
     border-radius: 10px;
     margin-bottom: 15px;
 }
+#realisations .altea-code .cta-more{
+   width: 40%;
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin:inherit auto;
+}
+
 #realisations .altea-numerique{
   background-color: #4acb883d;
     border-radius: 10px;
@@ -590,12 +596,6 @@ nav ul li .contact:hover{
 }
 }
 @media (max-width:992px) {
-body{
-  font-size: 17px;
-  text-align: justify;
-  text-justify: inter-word;
-  hyphens: auto;
-}
 header{height: 80px; background-color: #f6f6f6;}
 
 .navbar-brand img{width: 90px;}
@@ -662,10 +662,18 @@ div .cta-more{
     font-size: 14px;
 }
 #realisations{
-  width: 100%;
+  width: 90%;
   padding: 0px !important;
 }
-#realisations ul a{
+#realisations .altea-code .cta-more{
+   width: 100%;
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin:inherit auto;
+}
+#realisations p a{
  display: flex;
  margin: 20px auto;
  justify-content: center;
@@ -678,4 +686,7 @@ div .cta-more{
   .section-caption h2{
     font-size: 2em !important;
 }
+}
+@media (max-width:400px) {
+
 }

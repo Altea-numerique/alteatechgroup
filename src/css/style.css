@@ -220,7 +220,7 @@ a.cta-more:hover{
     background-image: url("../img/bg-digital-blue.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;   
 }
 #valeur-ajoutee .container{
   margin: 50px inherit;
@@ -475,32 +475,20 @@ a.cta-more:hover{
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #3e3e3e;
 }
+#equipe{
+    margin-bottom: 5%;
+}
 
-.team-slider .swiper-slide{padding: 20px 10px;}
 .team{
     border-top: 3px solid rgba(0, 0, 0, 0.158) !important;
-    padding-top: 25px;
+    padding: 40px;
+    margin-left: 20px;
 }
+
 .team img{width: 100%; border-radius: 15px;}
-.team .offre{margin-top: 1%; background-color: #fff; padding: 10px; margin-right: 15px; border-radius: 15px; box-shadow: 2px 3px 10px #9f9f9f;}
+.team .offre{width: 24%; margin-top: 1%; background-color: #fff; padding: 10px; margin-right: 10px; border-radius: 15px; box-shadow: 2px 3px 10px #9f9f9f;}
 .team .offre:hover{transform: scale(1.03); cursor: pointer;transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);}
 
-#equipe .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-#equipe .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #3e3e3e;
-}
-
-#equipe .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #3e3e3e;
-}
 
 /*----------------Contact page-----------*/
 form{margin: 10vh auto; padding: 30px; background-color: #fff;border-radius: 10px; box-shadow: 0px 1px 10px 0px #aaaaaa;}
@@ -642,6 +630,7 @@ nav ul li .contact:hover{
   border-radius: 5px;
   color: #457b9d;
 }
+.team .offre{width: 100%; margin-top: 10%}
 }
 @media (max-width:992px) {
 header{height: 80px; background-color: #f6f6f6;}
@@ -729,6 +718,7 @@ div .cta-more{
  width: 230px;
 }
 .testimony .card,.credibility .card{margin:1% 0%;}
+
 }
 @media (max-width:700px) {
   .section-caption h2{

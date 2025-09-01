@@ -213,34 +213,6 @@ const swipe = new Swiper(".mySwiper", {
     }
   });
 
-  const swiper = new Swiper('.team-slider', {
-    speed: 800,
-    loop: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-      950: {
-                slidesPerView: 2,
-              },
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      }
-    }
-  });
-
   /**
    * Animation on scroll
    */

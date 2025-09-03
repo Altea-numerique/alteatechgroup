@@ -393,6 +393,15 @@ a.cta-more:hover{
 #realisations .cta-altNum a:hover{
   background-color: rgb(58, 152, 58);
 }
+
+#support-client,#resolu-prob{
+  margin-top: 100px;
+}
+#support-client img,#resolu-prob img{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.244);
+  margin-bottom: 20px;
+}
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/

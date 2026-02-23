@@ -16,8 +16,17 @@
       $('#btn-menu').show()
       $('.bg-bars').hide(50)
       $('body').css({'overflow-y':'auto'})
-    })
+    });
 
+    
+   
+
+// Bars Button
+var barsBtn = document.getElementById('bars');
+var menu = document.getElementById('NavLink');
+barsBtn.addEventListener('click',()=>{
+    menu.classList.toggle('menuOn');
+});
       /**Form function */
 
 var $field = $('.field'),
@@ -224,3 +233,25 @@ const swipe = new Swiper(".mySwiper", {
       mirror: false
     })
   });
+
+
+//Mode nuit
+
+const btnMode = document.getElementById('BtnMode');
+const PageContent = document.querySelectorAll('body.Page');
+
+//Session Storage
+// Vérifier si le mode nuit est sauvegardé dans sessionStorage
+    if (sessionStorage.getItem('DarkMode') === 'true') {
+        document.body.classList.add('DarkPage');
+    }
+
+btnMode.addEventListener('click', ()=>{ 
+
+    // Basculer la classe 'night-mode'
+      document.body.classList.toggle('DarkPage');
+
+        // Sauvegarder l'état du mode nuit dans sessionStorage
+        const isNightMode = document.body.classList.contains('DarkPage');
+        sessionStorage.setItem('DarkMode', isNightMode);
+});
